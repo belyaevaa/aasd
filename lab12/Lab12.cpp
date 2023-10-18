@@ -31,7 +31,7 @@ void KMP(std::string& text, std::string& pattern)
 	int j = 0;
 	int i = 1;
 
-	while (i<pattern.size()) //Заполнение массива максимальных суффиксов и префиксов
+	while (i<pattern.size()) 
 	{
 		if (pattern[j] == pattern[i])
 		{
@@ -59,7 +59,7 @@ void KMP(std::string& text, std::string& pattern)
 	i = 0;
 	j = 0;
 
-	while (i < text.size()) //Проход по всему тексту
+	while (i < text.size()) 
 	{
 		if(text[i] == pattern[j])
 		{
@@ -68,7 +68,7 @@ void KMP(std::string& text, std::string& pattern)
 
 			if (j == pattern.size())
 			{
-				std::cout << j+1 << std::endl; //начиная с какого индека в текста начинается подстрока
+				std::cout << j+1 << std::endl; 
 				break;
 			}			
 		}
@@ -102,7 +102,7 @@ void main()
 
 	setlocale(LC_ALL, "rus");
 
-	std::cout << "Введите строку для поиска: ";
+	std::cout << "Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ РїРѕ РїРѕРёСЃРєСѓ: ";
 
 	std::string pattern;
 	std::cin >> pattern;
